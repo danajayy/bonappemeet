@@ -1,41 +1,52 @@
+/*
+ * styling for entire login page
+ * mostly just to put the background image
+ */
 #login {
-	background-image: url('http://i.imgur.com/g4ieLxL.jpg?4');
+	background-image: url('http://howtousevinevera.com/wp-content/uploads/2015/04/Vine-Vera-Hosting-a-Wine-Tasting-Party-1000x445.jpg');
 	background-repeat: no-repeat;
 	background-position: fixed;
 	background-size: cover;
 }
 
+#title {
+	font-family: 'Satisfy', Helvetica, sans-serif;
+	color: white;
+	font-size: 3.5em;
+	margin-top: 130px;
+	text-align: center;
+}
+
 #loginform {
-	margin-top: 30px;
+	margin-top: 15px;
 	right: 0;
 	left: 0;
 	margin-left: auto;
 	margin-right: auto;
 	position: fixed;
-	width: 70%;
+	width: 80%;
 }
 
 #login-btn {
 	margin-top: 20px;
-	background-color: #803300;
-	color: white;
-}
-
-#login-btn:hover {
 	background-color: #ff6600;
-}
-
-#title {
-	font-family: 'Satisfy', Helvetica, sans-serif;
 	color: white;
-	font-size: 3.9em;
-	margin-top: 200px;
-	text-align: center;
 }
 
-#login-content {
-	margin-top: -100px;
-	background-color: rgba(0,0,0,0.4);
+#login-btn:active {
+	background-color: #ffa366;
+	/* default white border appears when clicked on */
+	border: none;
+}
+
+#signup-btn {
+	background: transparent;
+	border: 1px solid #ffa366;
+	color: white;
+}
+
+#signup-btn:active {
+	background-color: #ffa366;
 }
 
 /* 
@@ -46,9 +57,14 @@
 }
 
 .item.item-input {
-	background-color: rgba(0,0,0,0.4);
+	/* this actually changes color of form */
+	background-color: rgba(0,0,0,0.3);
+	border: 1px solid #ffa366;
 }
 
+/*
+ * Changes font color of form text
+ */
 .formtext {
 	color: white !important;
 }
