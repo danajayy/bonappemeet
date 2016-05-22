@@ -1,21 +1,61 @@
 #login {
-	background-image: url('http://i.imgur.com/g4ieLxL.jpg?2');
+	background-image: url('http://i.imgur.com/g4ieLxL.jpg?4');
 	background-repeat: no-repeat;
 	background-position: fixed;
-	background-image: cover;
+	background-size: cover;
 }
 
 #loginform {
-	margin: 190px auto;
+	margin-top: 30px;
+	right: 0;
+	left: 0;
+	margin-left: auto;
+	margin-right: auto;
 	position: fixed;
-	width: 100%;
+	width: 70%;
+}
+
+#login-btn {
+	margin-top: 20px;
+	background-color: #803300;
+	color: white;
+}
+
+#login-btn:hover {
+	background-color: #ff6600;
+}
+
+#title {
+	font-family: 'Satisfy', Helvetica, sans-serif;
+	color: white;
+	font-size: 3.9em;
+	margin-top: 200px;
+	text-align: center;
+}
+
+#login-content {
+	margin-top: -100px;
+	background-color: rgba(0,0,0,0.4);
+}
+
+/* 
+ * This controls the style of form inset
+ */
+.list.list-inset {
+	background-color: transparent;
 }
 
 .item.item-input {
-	color: white;
-	background-color: rgba(0,0,0,0.3);
+	background-color: rgba(0,0,0,0.4);
+}
+
+.formtext {
+	color: white !important;
 }
 
 .bar.bar-header {
-	display: none;
+	background: transparent;
+	
+	/*need this to remove the bottom border*/
+	background-image: none !important;
 }
