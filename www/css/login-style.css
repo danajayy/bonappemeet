@@ -1,7 +1,21 @@
 /*
- * styling for entire login page
- * mostly just to put the background image
+ * stylesheet for login.html (Bon AppeMeet!)
+ *
+ * Contents:
+ *			Section 01: Overall Login page styling
+ *			Section 02: Title
+ *			Section 03: Login form
+ *			Section 04: Buttons
+ *			Section 05: Header removal
+ *
  */
+ 
+/******************************************************************************
+  * Section 01: Overall Login page styling
+  *
+  * This section styles the entire login page, mostly
+  * styling the background image of this page.
+  * *****************************************************************************/
 #login {
 	background-image: url('http://howtousevinevera.com/wp-content/uploads/2015/04/Vine-Vera-Hosting-a-Wine-Tasting-Party-1000x445.jpg');
 	background-repeat: no-repeat;
@@ -9,6 +23,14 @@
 	background-size: cover;
 }
 
+/******************************************************************************
+  * Section 02: Title
+  *
+  * This section styles the title of the login page,
+  * specifically the font, color, and font-size.
+  * Margin-top is adjusted so the title appears at
+  * the center of the page.
+  *****************************************************************************/
 #title {
 	font-family: 'Satisfy', Helvetica, sans-serif;
 	color: white;
@@ -39,12 +61,18 @@
 	border: none;
 }
 
+/*
+ * styling for the signup button
+ */
 #signup-btn {
 	background: transparent;
 	border: 1px solid #ffa366;
 	color: white;
 }
 
+/*
+ * styling for the signup button when clicked
+ */
 #signup-btn:active {
 	background-color: #ffa366;
 }
@@ -52,11 +80,11 @@
 /* 
  * This controls the style of form inset
  */
-.list.list-inset {
+#loginform .list.list-inset {
 	background-color: transparent;
 }
 
-.item.item-input {
+#loginform .item.item-input {
 	/* this actually changes color of form */
 	background-color: rgba(0,0,0,0.3);
 	border: 1px solid #ffa366;
@@ -65,7 +93,7 @@
 /*
  * Changes font color of form text
  */
-.formtext {
+#loginform .formtext {
 	color: white !important;
 }
 
