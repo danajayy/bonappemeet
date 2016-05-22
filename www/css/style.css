@@ -1,1 +1,21 @@
-/* Empty. Add your own CSS if you like */
+#login {
+	background-image: url('http://i.imgur.com/g4ieLxL.jpg?2');
+	background-repeat: no-repeat;
+	background-position: fixed;
+	background-image: cover;
+}
+
+#loginform {
+	margin: 190px auto;
+	position: fixed;
+	width: 100%;
+}
+
+.item.item-input {
+	color: white;
+	background-color: rgba(0,0,0,0.3);
+}
+
+.bar.bar-header {
+	display: none;
+}
