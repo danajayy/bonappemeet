@@ -13,7 +13,7 @@
 /******************************************************************************
   * Section 01: Overall Login page styling
   *
-  * This section styles the entire login page, mostly
+  * This section styles the general login page, mostly
   * styling the background image of this page.
   * *****************************************************************************/
 #login {
@@ -39,6 +39,14 @@
 	text-align: center;
 }
 
+/******************************************************************************
+  * Section 03: Login Form
+  *
+  * This section styles the actual login form.
+  * The inset is the container of the text forms while
+  * .item and .item-input are the actual text forms
+  * *****************************************************************************/
+
 #loginform {
 	margin-top: 15px;
 	right: 0;
@@ -48,6 +56,33 @@
 	position: fixed;
 	width: 80%;
 }
+
+/* 
+ * This controls the style of form inset
+ */
+#loginform .list.list-inset {
+	background-color: transparent;
+}
+
+#loginform .item.item-input {
+	/* this actually changes color of form */
+	background-color: rgba(0,0,0,0.3);
+	border: 1px solid #ffa366;
+}
+
+/*
+ * Changes font color of form text
+ */
+#loginform .formtext {
+	color: white !important;
+}
+
+/******************************************************************************
+  * Section 04: Buttons
+  *
+  * This section styles the login and sign-up button,
+  * specifically color, font color, size, and positioning.
+  * *****************************************************************************/
 
 #login-btn {
 	margin-top: 20px;
@@ -77,25 +112,12 @@
 	background-color: #ffa366;
 }
 
-/* 
- * This controls the style of form inset
- */
-#loginform .list.list-inset {
-	background-color: transparent;
-}
-
-#loginform .item.item-input {
-	/* this actually changes color of form */
-	background-color: rgba(0,0,0,0.3);
-	border: 1px solid #ffa366;
-}
-
-/*
- * Changes font color of form text
- */
-#loginform .formtext {
-	color: white !important;
-}
+/******************************************************************************
+  * Section 05: Header removal
+  *
+  * This section removes the header from the page.
+  * Need this to be removed for aesthetic purposes.
+  * *****************************************************************************/
 
 .bar.bar-header {
 	background: transparent;
