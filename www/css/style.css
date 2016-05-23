@@ -1,0 +1,108 @@
+/*
+ * stylesheet for all the tab pages (Bon AppeMeet!)
+ *
+ * Contents:
+ *			Section 01: General Page Styling
+ *			Section 02: Account Page Styling
+ *
+ */
+ 
+/******************************************************************************
+ * Section 01: General page styling
+ *
+ * This section applies general styling to all the pages.
+ *
+ ******************************************************************************/
+
+/*
+ * This makes all header tags have the font color white 
+ */
+h1, h2, h3, h4 {
+	color: white;
+}
+
+/* 
+ * This makes the page title (in the header) centered and white.
+ */
+.page-title {
+	color: white;
+	margin: auto;
+} 
+
+.alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
+
+/*
+ * This makes the entire page have a transparent dark color to
+ * darken the page and bring out the content more. This mutes
+ * the background image a little more without needing to 
+ * customize the image. The entire page content is shifted up
+ * to cover the header space - header takes up space by default.
+ * Also makes all text centered on page.
+ */
+.content {  
+	margin-top: -45px;
+	background-color: rgba(0,0,0,0.3);
+	text-align: center;
+ }
+
+/******************************************************************************
+ * Section 02: Account Page Styling
+ *
+ * This section styles the account page.
+ * ******************************************************************************/
+
+/*
+ * This applies the background image for the entire page.
+ * The background is fixed, does not repeat, and spans 
+ * the entire size of the page.
+ */
+#account-page {
+	background-image: url('http://cdn2.hubspot.net/hubfs/455757/Blog_Images/Blurred_lines_between_fine_dining_and_fast_casual.jpg');
+	background-size: cover; 
+	background-repeat: none;
+	background-position: fixed;
+}
+ 
+/*
+ * This styles the header of t
+ */
+#account-page .page-header {
+	background-color: rgba(0,0,0,0.4);
+	height: 40px;
+	width: 100%;
+	margin: auto;
+}
+
+#fullname {
+	padding-top: 100px;
+}
+
+#profilepic {
+	background-image: url('https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/10307365_317213355104500_3621325403504193700_n.jpg?oh=02e0e6f9167dcd9c44b8847bae6ab066&oe=57E057F7');
+	background-size: cover;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 35px;
+	height: 125px;
+	width: 125px;
+	border-radius: 100%;
+}
+
+.settings {
+	margin-bottom: 50px;
+}
+
+.user-info {
+	background: transparent;
+	margin-bottom: 50px;
+}
+
+.ion-sad-outline {
+	margin-left: 10px;
+}

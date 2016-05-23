@@ -1,9 +1,60 @@
-<ion-view view-title="Account">
-  <ion-content>
-    <ion-list>
-    <ion-toggle  ng-model="settings.enableFriends">
-        Enable Friends
-    </ion-toggle>
-    </ion-list>
+<ion-view id="account-page">
+
+  <ion-header-bar class="page-header">
+	<h3 class="page-title">Account</h3>
+  </ion-header-bar>
+  
+  <ion-content class="content">
+  
+	<h2 id="fullname">Dana Joaquin</h2>
+	<h4 id="username">username</h4>
+	<div id="profilepic"></div>
+	
+	<!-- User Information -->
+	<!--					-->
+	<div class="list list-inset user-info">
+	
+		<!-- User Sex Info -->
+		<!--				-->
+		<div class="item item-divider">
+			<p class="alignleft">Sex</p> <span class="alignright">Female</span>
+		</div>
+		
+		<!-- Diet Restriction Info -->
+		<!--				-->
+		<div class="item item-divider">
+			<p class="alignleft">Diet Restriction</p> <span class="alignright">None</span>
+		</div>
+		
+		<!-- Lateness Info -->
+		<!--				-->
+		<div class="item item-divider">
+			<p class="alignleft">Lateness Rating </p> <i class="icon ion-sad-outline alignright"></i><span class="alignright">Generally Late </span>
+		</div>
+	
+	<!-- end of User Information -->
+	<!--					-->
+	</div>
+	
+	<!-- start of Settings Information -->
+	<!--					-->
+	<div class="list list-inset settings">
+	
+		<!-- Enable Notifications Option -->
+		<!--				-->
+		<ion-toggle ng-model="airplaneMode" toggle-class="toggle-calm" class="toggle-option"><span class="alignleft">Enable Notifications</span></ion-toggle>
+		
+		<!-- Restaurant Radius -->
+		<!--				-->
+		<div class = "item range">
+			<p>1 mile</p>
+			<input type = "range" name = "Radius Distance">
+			<p>50 miles</p>
+		</div>
+		
+	<!-- end of Settings Information -->
+	<!--					-->
+	</div>
+	
   </ion-content>
 </ion-view>
