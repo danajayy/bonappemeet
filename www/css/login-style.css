@@ -6,7 +6,6 @@
  *			Section 02: Title
  *			Section 03: Login form
  *			Section 04: Buttons
- *			Section 05: Header removal
  *
  */
  
@@ -116,18 +115,4 @@
  */
 #signup-btn:active {
 	background-color: #ffa366;
-}
-
-/******************************************************************************
-  * Section 05: Header removal
-  *
-  * This section removes the header from the page.
-  * Need this to be removed for aesthetic purposes.
-  * *****************************************************************************/
-
-.bar.bar-header {
-	background: transparent;
-	
-	/*need this to remove the bottom border*/
-	background-image: none !important;
 }

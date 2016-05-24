@@ -10,9 +10,9 @@
 /******************************************************************************
  * Section 01: General page styling
  *
- * This section applies general styling to all the pages.
- *
- ******************************************************************************/
+ * This section applies general styling that is applied
+ * or can be used when needed on all the pages.
+ * ******************************************************************************/
 
 /*
  * This makes all header tags have the font color white 
@@ -29,12 +29,36 @@ h1, h2, h3, h4 {
 	margin: auto;
 } 
 
+/*
+ * This makes any element align left.
+ */
 .alignleft {
 	float: left;
 }
 
+/*
+ * This makes any element align right.
+ */
 .alignright {
 	float: right;
+}
+
+/* 
+ * This gives all headers a black tranparent background color.
+ */
+.bar.bar-header {
+	background-color: rgba(0,0,0,0.3);
+}
+
+/* 
+ * This removes the single bottom border on all the headers
+ * on every page.
+ */
+.bar-header {
+	border: 0px !important;
+	border-bottom-color: transparent !important;
+	background-image: none !important;
+	border-bottom: none !important;
 }
 
 /*
@@ -54,7 +78,8 @@ h1, h2, h3, h4 {
 /******************************************************************************
  * Section 02: Account Page Styling
  *
- * This section styles the account page.
+ * This section styles the account page and its contents. 
+ *			
  * ******************************************************************************/
 
 /*
@@ -68,23 +93,23 @@ h1, h2, h3, h4 {
 	background-repeat: none;
 	background-position: fixed;
 }
- 
-/*
- * This styles the header of t
- */
-#account-page .page-header {
-	background-color: rgba(0,0,0,0.4);
-	height: 40px;
-	width: 100%;
-	margin: auto;
-}
 
+/*
+ * Apply space between full name and username
+ */
 #fullname {
 	padding-top: 100px;
 }
 
+/*
+ * Contain profile image in div container so any size/shape
+ * picture can be used without distorting dimensions.
+ * This makes the profile picture circular and centered on page.
+ */
 #profilepic {
-	background-image: url('https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/10307365_317213355104500_3621325403504193700_n.jpg?oh=02e0e6f9167dcd9c44b8847bae6ab066&oe=57E057F7');
+	background-image: url('https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/10307365_317213355104500_3621325403504193700_n.jpg?oh=02e0e6f9167dcd9c44b8847bae6ab066&oe=57E057F7');	
+	/* Regardless of profile size, make the profile image
+	   span entire size of div. */
 	background-size: cover;
 	margin: auto;
 	margin-top: 20px;
@@ -94,15 +119,28 @@ h1, h2, h3, h4 {
 	border-radius: 100%;
 }
 
+/*
+ * This styles entire settings section. This class is
+ * mostly just to hold all the children in one container.
+ */
 .settings {
 	margin-bottom: 50px;
 }
 
+/*
+ * This styles entire user info section. This class is mostly
+ * just to hold all the children in one container.
+ */
 .user-info {
 	background: transparent;
 	margin-bottom: 50px;
 }
 
+/*
+ * This icon displays the lateness rating of the user in image form. 
+ * Right now, just coded into html document for display purposes.
+ * This function should change base on user's actual ratings through the app.
+ */
 .ion-sad-outline {
 	margin-left: 10px;
 }
